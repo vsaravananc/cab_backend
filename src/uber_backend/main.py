@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from .modules import auth_router
 
 app : FastAPI = FastAPI()
 
-@app.get('/')
-def root(): 
-    return {"succes": True}
+app.include_router(auth_router)

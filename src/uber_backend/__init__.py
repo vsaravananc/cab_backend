@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from uber-backend!")
+from .modules import auth_router
